@@ -1,0 +1,8 @@
+from django.http import HttpResponse
+from django.template import Template,Context
+# from django.template.loader import get_template
+from django.shortcuts import render_to_response
+# from django.shortcuts import render
+
+def about(request):
+    return render_to_response("about.html")
